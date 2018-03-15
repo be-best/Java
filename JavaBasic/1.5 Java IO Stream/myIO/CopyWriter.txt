@@ -1,0 +1,29 @@
+package com.Brooke01;
+
+import java.io.FileWriter;
+import java.io.IOException;
+
+
+public class FileWriterDemo1 {
+	public static void main(String[] args) throws IOException {
+		//创建输出流对象"
+		FileWriter fw = new FileWriter("FileWriterDemo1.txt");
+		
+		//调用输出流对象写数据的方法
+		//写一个字符串数据
+		fw.write("HelloWorld！");
+		//数据没有写到文件里，只写到缓冲区
+		fw.flush();
+		
+		
+		//flush刷新缓冲区，后面可以继续写数据
+		fw.write("java");
+		fw.flush();
+		
+		//释放资源
+		//通知系统释放和该文件相关的资源
+		//close()，刷新缓冲区，通知系统释放资源。流对象不可以再使用。后面无法继续写数据。
+		fw.close();
+		
+	}
+}
