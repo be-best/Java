@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans>
+	<bean id="uid001" className="bull06.XMLTest.User">
+	<property name="uid" value="u001"></property>
+		<property name="userName"	value="kobe"></property>
+		<property name="userPasswd" value="123456"></property>
+	</bean>
+	
+	<bean id="bid001" className="bull06.XMLTest.Book">
+	<property name="bid" value="b001"></property>
+		<property name="title" value="myBook"></property>
+		<property name="price" value="999"></property>
+	</bean>
+</beans>
