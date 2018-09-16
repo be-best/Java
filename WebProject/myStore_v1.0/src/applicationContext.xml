@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans>
+	<bean id="userDao" class="com.store.dao.imple.UserDaoImple"></bean>
+	<bean id="productDao" class="com.store.dao.imple.ProductDaoImple"></bean>
+	<bean id="categoryDao" class="com.store.dao.imple.CategoryDaoImple"></bean>
+	<bean id="orderDao" class="com.store.dao.imple.OrderDaoImple"></bean>
+	
+	<bean id="userService" class="com.store.service.imple.UserServiceImple"></bean>
+	<bean id="productService" class="com.store.service.imple.ProductServiceImple"></bean>
+	<bean id="categoryService" class="com.store.service.imple.CategoryServiceImple"></bean>
+	<bean id="orderService" class="com.store.service.imple.OrderServiceImple"></bean>
+</beans>

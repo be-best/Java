@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<script>
+			//设置表格隔行换色
+			function changeColor() {
+				//获取对象控制权
+				var table1 = document.getElementById("dataTable");
+				//获取行数
+				var count = table1.tBodies[0].rows.length;
+				//遍历行数,注意用var定义i
+				for(var i = 0;i < count;i++) {
+					if(i%2 == 0) {
+						table1.tBodies[0].rows[i].style.backgroundColor = "#EEFFFF";
+					}
+					else {
+						table1.tBodies[0].rows[i].style.backgroundColor = "#00FFFE";
+					}
+				}
+			}
+		</script>
+	</head>
+	<body onload="changeColor()">
+		<table border = "1" width = "80%" align="center" id="dataTable">
+			<thead style="background-color: #66F4DF;">
+				<tr>
+					<td>分类ID</td>
+					<td>分类名称</td>
+					<td>分类描述</td>
+					<td>操作</td>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+				<td>1</td>
+				<td>手机数码</td>
+				<td>手机数码</td>
+				<td><a href="">修改</a>|<a href="">删除</a></td>
+			</tr>
+			<tr>
+				<td>2</td>
+				<td>烟酒糖茶</td>
+				<td>烟酒糖茶</td>
+				<td><a href="">修改</a>|<a href="">删除</a></td>
+			</tr>
+			<tr>
+				<td>3</td>
+				<td>鞋靴箱包</td>
+				<td>鞋靴箱包</td>
+				<td><a href="">修改</a>|<a href="">删除</a></td>
+			</tr>
+			</tbody>
+		</table>
+	</body>
+</html>

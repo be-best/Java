@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>JS的BOM对象</title>
+		<script>
+			function del() {
+				confirm("是否删除！")
+			}
+			
+			function edit() {
+				prompt("请输入商品价格","299");
+			}
+			
+			function openWindow() {
+				open("http://www.baidu.com","","width=400px,height=500px");
+			}
+		</script>
+	</head>
+	<body>
+		<input type="button" value="删除" onclick="del()"/>
+		<input type="button" value="编辑" onclick="edit()"/>
+		<input type="button" value="打开" onclick="openWindow()"/>
+	</body>
+</html>

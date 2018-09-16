@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link rel="stylesheet" href="../css/style.css" />
+		<script type="text/javascript" src="../js/jquery-1.11.3.min.js" ></script>
+		<script>
+			$(function() {
+				//*****************基本过滤选择器*********************// 
+				//选择ID为three的第一个子DIV元素
+				$("#but1").click(function() {
+					$("#three div:first").css("background","red");
+				});
+				//选择ID为three的最后一个div子元素
+				$("#but2").click(function() {
+					$("#three div:last").css("background","navajowhite");
+				});
+				//选择ID为three的第二个div子元素:eq(1);
+				$("#but3").click(function() {
+					$("#three div:eq(1)").css("background","magenta");
+				});
+				//选择div中所有的奇数div
+				$("#but4").click(function() {
+					$("div:odd").css("background","firebrick");
+				});
+				//选择div中所有的偶数div
+				$("#but5").click(function() {
+					$("div:even").css("background","darkblue");
+				});
+			});
+				
+		</script>
+	</head>
+	<body>
+		基本过滤选择器：
+		<input type="button" id="but1" value="选择ID为three的第一个子DIV元素" />
+		<input type="button" id="but2" value="选择ID为three的最后一个div子元素" />
+		<input type="button" id="but3" value="选择ID为three的第二个div子元素" />
+		<input type="button" id="but4" value="选择div中所有的奇数div" />
+		<input type="button" id="but5" value="选择div中所有的偶数div" />
+		<hr />
+		<div id="one">
+			<div class="mini">
+				111
+			</div>
+		</div>
+		<div id="two">
+			<div class="mini">
+				222
+			</div>
+			<div class="mini">
+				333
+			</div>
+		</div>
+		<div id="three">
+			<div class="mini">
+				444
+			</div>
+			<div class="mini">
+				555
+			</div>
+			<div class="mini">
+				666
+			</div>
+		</div>
+		<div id="four">
+			<div class="mini">
+				777
+			</div>
+			<div class="mini">
+				888
+			</div>
+			<div class="mini">
+				999
+			</div>
+			<div class="mini">
+				000
+			</div>
+		</div>
+		<span id="five">
+			<div class="mini">
+				1000
+			</div>
+		</span>
+	</body>
+</html>

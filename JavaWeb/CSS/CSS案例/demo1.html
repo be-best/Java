@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		
+		<style>
+			/*整个body*/
+			#bodyDiv{	
+				width: 85%;
+				margin:0 auto;/*设置body居中*/
+			}
+			
+			/*第一栏logo*/
+			.logoDiv{
+				float: left;
+				width: 33%;
+				height: 80px;
+			}
+			
+			.logoDiv a{
+			text-decoration:none;/*去下划线*/
+            line-height: 80px; /*设置line-height与父级元素的height相等*/
+            /*overflow: hidden; /*防止内容超出容器或者产生自动换行*/
+			}
+			
+			.clear{
+				clear: both;/*去除浮动*/
+			}
+			
+			/*菜单栏*/
+			#menuDiv{
+				width: 100%;
+				height: 40px;
+				background-color: black;
+			}
+			#menuDiv a{
+				font-size: 20px;
+				color: white;
+				line-height: 40px;
+				text-decoration:none;/*去下划线*/
+			}
+			
+			/*图片滚动栏*/
+			#imgDiv{
+				width: 100%;
+			}
+			
+			/*最新商品*/
+			.product{
+				width: 100%;
+			}
+			
+			.contentclass{
+				width: 100%;
+			}
+			
+			.contentclass font{
+				font-size: 30px;
+				color: black;
+			}
+			
+			/*底部链接*/
+			.linkDiv a{
+				font-size: 15px;
+				color: blue;
+				text-decoration: none;
+			}
+			
+		</style>
+	</head>
+	
+		<body>
+			<!--整个body-->
+		<div id="bodyDiv">
+			<!--logo栏-->
+			<div>
+				<div class="logoDiv">
+					<img src="img/logo2.png" />
+				</div>
+				<div class="logoDiv">
+					<img src="img/header.jpg" />
+				</div>
+				<div class="logoDiv" style="vertical-align:middle">
+					<a href="#" >登录</a>&nbsp;&nbsp;&nbsp;
+					<a href="#" >注册</a>&nbsp;&nbsp;&nbsp;
+					<a href="#" >购物车</a>&nbsp;&nbsp;&nbsp;
+				</div>
+				<div class="clear"></div>
+			</div>
+			
+			<!--菜单栏-->
+			<div id="menuDiv">
+				<a href="#">首页</a>&nbsp;&nbsp;&nbsp;
+				<a href="#">手机数码</a>&nbsp;&nbsp;&nbsp;
+				<a href="#">电脑办公</a>&nbsp;&nbsp;&nbsp;
+				<a href="#">烟酒茶糖</a>&nbsp;&nbsp;&nbsp;
+				<a href="#">鞋靴箱包</a>&nbsp;&nbsp;&nbsp;
+			</div>
+			
+			<!--图片滚动栏-->
+			<div id="imgDiv">
+				<img src="img/okwu-athletics.jpg" width="100%"/>
+			</div>
+			
+			<!--热门商品栏-->
+			<div class="product">
+				<!--
+                	热门商品+图片
+                -->
+				<div class="contentclass">
+					<font><b>热门商品</b></font><img src="images/title2.jpg"/>
+				</div>
+				
+				<!--
+                	商品类型
+                -->
+				<div style="width: 100%">
+					<!--第一列-->
+					<div style="width: 16%;height: 460px;float: left;" >
+						<img src="image/big01.jpg" width="100%" height="100%"/>
+					</div>
+					<!--剩下的横着排的-->
+					<div style="width: 84%;height: 460px;float: left;">
+						
+						<!--第一行-->
+						<div>
+							<div style="width: 48%;height: 230px;float: left;">
+								<img src="image/middle01.jpg" width="100%" height="100%"/>
+							</div>
+							<div style="width: 16%;height: 230px;float: left;">
+								<img src="image/0ff130db-0a1b-4b8d-a918-ed9016317009-thumbnail.jpg">
+							</div>
+							<div style="width: 16%;height: 230px;float: left">
+								<img src="image/0ff130db-0a1b-4b8d-a918-ed9016317009-thumbnail.jpg"> 
+							</div>
+							<div style="width: 16%;height: 230px;float: left">
+								<img src="image/0ff130db-0a1b-4b8d-a918-ed9016317009-thumbnail.jpg">
+							</div>	
+						</div>
+						
+						<!--第二行-->
+						<div>
+							<div style="width: 16%;height: 230px;float: left">
+								<img src="image/0ff130db-0a1b-4b8d-a918-ed9016317009-thumbnail.jpg">
+							</div>
+							<div style="width: 16%;height: 230px;float: left">
+								<img src="image/0ff130db-0a1b-4b8d-a918-ed9016317009-thumbnail.jpg"> 
+							</div>
+							<div style="width: 16%;height: 230px;float: left">
+								<img src="image/0ff130db-0a1b-4b8d-a918-ed9016317009-thumbnail.jpg">
+							</div>	
+							<div style="width: 16%;height: 230px;float: left">
+								<img src="image/0ff130db-0a1b-4b8d-a918-ed9016317009-thumbnail.jpg">
+							</div>
+							<div style="width: 16%;height: 230px;float: left">
+								<img src="image/0ff130db-0a1b-4b8d-a918-ed9016317009-thumbnail.jpg"> 
+							</div>
+							<div style="width: 16%;height: 230px;float: left">
+								<img src="image/0ff130db-0a1b-4b8d-a918-ed9016317009-thumbnail.jpg">
+							</div>	
+						</div>
+						</div>
+					</div>
+				</div>
+				
+				<!--广告栏-->
+				<div style="width: 100%;">
+					<img src="image/ad.jpg" width="100%" height="100%">
+				</div>
+				
+				<!--最新商品栏-->
+				<div class="product">
+				<!--
+                	最新商品+图片
+                -->
+				<div class="contentclass">
+					<font><b>最新商品</b></font><img src="images/title2.jpg"/>
+				</div>
+				<!--
+                	商品类型
+                -->
+				<div style="width: 100%">
+					<!--第一列-->
+					<div style="width: 16%;height: 460px;float: left;" >
+						<img src="image/big01.jpg" width="100%" height="100%"/>
+					</div>
+					
+					<!--剩下的横着排的-->
+					<div style="width: 84%;height: 460px;float: left;">
+						<!--第一行-->
+						<div>
+							<div style="width: 48%;height: 230px;float: left;">
+								<img src="image/middle01.jpg" width="100%" height="100%"/>
+							</div>
+							<div style="width: 16%;height: 230px;float: left;">
+								<img src="image/0ff130db-0a1b-4b8d-a918-ed9016317009-thumbnail.jpg">
+							</div>
+							<div style="width: 16%;height: 230px;float: left">
+								<img src="image/0ff130db-0a1b-4b8d-a918-ed9016317009-thumbnail.jpg"> 
+							</div>
+							<div style="width: 16%;height: 230px;float: left">
+								<img src="image/0ff130db-0a1b-4b8d-a918-ed9016317009-thumbnail.jpg">
+							</div>	
+						</div>
+						
+						<!--第二行-->
+						<div>
+							<div style="width: 16%;height: 230px;float: left">
+								<img src="image/0ff130db-0a1b-4b8d-a918-ed9016317009-thumbnail.jpg">
+							</div>
+							<div style="width: 16%;height: 230px;float: left">
+								<img src="image/0ff130db-0a1b-4b8d-a918-ed9016317009-thumbnail.jpg"> 
+							</div>
+							<div style="width: 16%;height: 230px;float: left">
+								<img src="image/0ff130db-0a1b-4b8d-a918-ed9016317009-thumbnail.jpg">
+							</div>	
+							<div style="width: 16%;height: 230px;float: left">
+								<img src="image/0ff130db-0a1b-4b8d-a918-ed9016317009-thumbnail.jpg">
+							</div>
+							<div style="width: 16%;height: 230px;float: left">
+								<img src="image/0ff130db-0a1b-4b8d-a918-ed9016317009-thumbnail.jpg"> 
+							</div>
+							<div style="width: 16%;height: 230px;float: left">
+								<img src="image/0ff130db-0a1b-4b8d-a918-ed9016317009-thumbnail.jpg">
+							</div>	
+						</div>
+						</div>
+					</div>
+				</div>
+				
+				<!--图片栏-->
+				<div style="width: 100%;">
+					<img src="image/footer.jpg" width="100%"/>
+				</div>
+				
+				<!--底栏-->
+				<center>
+					<div class="linkDiv" >
+						<a href="#" >关于我们</a>&nbsp;&nbsp;
+						<a href="#" >联系我们</a>&nbsp;&nbsp;
+						<a href="#" >招贤纳士</a>&nbsp;&nbsp;
+						<a href="#" >法律声明</a>&nbsp;&nbsp;
+						<a href="#" >友情链接</a>&nbsp;&nbsp;
+						<a href="#" >支付方式</a>&nbsp;&nbsp;
+						<a href="#" >配送方式</a>&nbsp;&nbsp;
+						<a href="#" >服务方式</a>&nbsp;&nbsp;
+						<a href="#" >广告声明</a>&nbsp;&nbsp;
+					</div>
+
+				<div>
+					<font>--------------------------------------------------------------------------------------------------</font>
+					<br />
+					<font> Copyright © 2005-2016 传智商城 版权所有 </font>
+				</div>
+			</center>
+			
+		</div>
+	</body>
+	
+</html>

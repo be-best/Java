@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app id="WebApp_ID">
+	<display-name>Web15</display-name>
+  <!-- 配置监听器 -->
+ <!--  <listener>
+  	<listener-class>weblistener.MyServletContextListener</listener-class>
+  </listener>	 -->
+  
+    <listener>
+  	<listener-class>weblistener.MyHttpSessionAttributeListener</listener-class>
+  </listener>	
+  
+  <!-- 配置过滤器 -->
+  <filter>
+  	<filter-name>demo1</filter-name>
+  	<filter_class>Filter.FilterDemo1</filter_class>
+  </filter>
+  
+  <filter-mapping>
+  	<filter-name>demo1</filter-name>
+  	<url-pattern>/FilterDemo/demo1.jsp</url-pattern>
+  </filter-mapping>
+	
+	<welcome-file-list>
+		<welcome-file>index.html</welcome-file>
+		<welcome-file>index.htm</welcome-file>
+		<welcome-file>index.jsp</welcome-file>
+		<welcome-file>default.html</welcome-file>
+		<welcome-file>default.htm</welcome-file>
+		<welcome-file>default.jsp</welcome-file>
+	</welcome-file-list>
+</web-app>

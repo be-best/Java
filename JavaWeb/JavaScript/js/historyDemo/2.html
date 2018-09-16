@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<script>
+			function lastPage() {
+				history.back();
+			}
+			
+			function nextPage() {
+				history.forward();
+			}
+			
+			window.onload = function() {
+				alert(window.screen.width);
+			}
+		</script>
+	</head>
+	<body>
+		<a href="3.html">链接</a>
+		<input type="button" value="上一个页面" onclick="lastPage()" />
+		<input type="button" value="下一个页面" onclick="nextPage()" />
+	</body>
+</html>

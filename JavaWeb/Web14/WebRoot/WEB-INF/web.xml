@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app id="WebApp_ID">
+	<display-name>Web14</display-name>
+  <servlet>
+    <servlet-name>AjaxServlet1</servlet-name>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <description>This is the description of my J2EE component</description>
+    <servlet-class>bull01.AjaxServlet.AjaxServlet1</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>AjaxRegistServlet</servlet-name>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <description>This is the description of my J2EE component</description>
+    <servlet-class>bull02.Ajax.AjaxServlet.AjaxRegistServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>JqueryRegistServlet</servlet-name>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <description>This is the description of my J2EE component</description>
+    <servlet-class>bull02.Ajax.AjaxServlet.JqueryRegistServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>SearchServlet</servlet-name>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <description>This is the description of my J2EE component</description>
+    <servlet-class>bull02.Ajax.AjaxServlet.SearchServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>Test</servlet-name>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <description>This is the description of my J2EE component</description>
+    <servlet-class>bull02.Ajax.AjaxServlet.Test</servlet-class>
+  </servlet>
+
+
+
+
+
+ 
+
+
+  <servlet-mapping>
+    <servlet-name>AjaxServlet1</servlet-name>
+    <url-pattern>/AjaxServlet1</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>AjaxRegistServlet</servlet-name>
+    <url-pattern>/AjaxRegistServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>JqueryRegistServlet</servlet-name>
+    <url-pattern>/JqueryRegistServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>SearchServlet</servlet-name>
+    <url-pattern>/SearchServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>Test</servlet-name>
+    <url-pattern>/Test</url-pattern>
+  </servlet-mapping>
+ 
+  
+	<welcome-file-list>
+		<welcome-file>index.html</welcome-file>
+		<welcome-file>index.htm</welcome-file>
+		<welcome-file>index.jsp</welcome-file>
+		<welcome-file>default.html</welcome-file>
+		<welcome-file>default.htm</welcome-file>
+		<welcome-file>default.jsp</welcome-file>
+	</welcome-file-list>
+</web-app>

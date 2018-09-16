@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+	</head>
+	<script type="text/javascript" src="../js/jquery-1.11.3.min.js" ></script>
+	<script>
+		//传统方式：页面加载只执行一次，下面两个只执行一个，后面那个。
+		window.onload = function() {
+			alert("传统页面1");
+		}
+//		
+		window.onload = function() {
+			alert("传统页面2")
+		}
+		
+		//JQuery方式，两个都会显示
+		$(function(){
+			alert("JQuery页面1");
+		});
+		
+		$(function() {
+			alert("JQuery页面2");
+		});
+	</script>
+	<body>
+	</body>
+</html>

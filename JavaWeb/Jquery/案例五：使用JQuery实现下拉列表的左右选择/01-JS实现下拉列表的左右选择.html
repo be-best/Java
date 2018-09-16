@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<script>
+			window.onload = function() {
+				document.getElementById("addRight").onclick = function() {
+					//获得左边的下拉列表
+					var selectLeft = document.getElementById("selectLeft");
+					for(var i = selectLeft.options.length-1;i >= 0;i--) {
+						if(selectLeft.options[i].selected == true) {
+							document.getElementById("selectRight").appendChild(selectLeft.options[i]);
+						}
+					}
+				}
+				
+				document.getElementById("addAll").onclick = function() {
+					var selectLeft = document.getElementById("selectLeft");
+					for(var i = selectLeft.options.length-1;i >= 0;i--) {
+						document.getElementById("selectRight").appendChild(selectLeft.options[i]);
+					}
+				}
+   				
+			}
+
+		</script>
+	</head>
+	<body>
+		<form>
+			<table width="400px" height="500px" align="center"border="1px">
+				<tr>
+					<td>分类名称</td>
+					<td><input type="text" name="cname" value="手机数码"</td>
+				</tr>
+				<tr>
+					<td>分类描述</td>
+					<td><textarea name="csdes" cols="20" rows="4">手机数码：</textarea></td>
+				</tr>
+				<tr>
+					<td>分类商品</td>
+					<td>
+						<span style="float: left;">
+							已有的商品<br />
+							<select multiple="multiple" id="selectLeft">
+								<option>iphone</option>
+								<option>HTC</option>
+								<option>三星</option>
+							</select>
+							<p id="addRight">&gt;&gt;</p>
+							<p id="addAll">&gt;&gt;&gt;</p>
+						</span>
+						<span style="float: right;">
+							未有的商品<br />
+							<select multiple="multiple" id="selectRight">
+								<option>华为</option>
+								<option>中兴</option>
+							</select>
+							<p>&lt;&lt;</p>
+							<p>&lt;&lt;&lt;</p>
+						</span>
+					</td>
+				</tr>
+				<tr>
+					<td colspan="2">
+						<input type="button" id="forSure" value="确定" />
+					</td>
+				</tr>
+			</table>
+		</form>
+	</body>
+</html>

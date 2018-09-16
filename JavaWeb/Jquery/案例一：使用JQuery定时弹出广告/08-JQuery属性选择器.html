@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link rel="stylesheet" href="../css/style.css" />
+		<script type="text/javascript" src="../js/jquery-1.11.3.min.js" ></script>
+		<script>
+			$(function() {
+				//*****************属性选择器*********************// 
+				//选择包含1的div元素
+				$("#but1").click(function() {
+					$("div[id]").css("background","red");
+				});
+				
+				$("#but2").click(function() {
+					$("div[title='aaa']").css("background","wheat");
+				})
+			});
+				
+		</script>
+	</head>
+	<body>
+		内容选择器：
+		<input type="button" id="but1" value="选择有id属性的div" />
+		<input type="button" id="but2" value="选择title属性为aaa的div元素" />
+		<hr />
+		<div id="one">
+			<div class="mini">
+				111
+			</div>
+		</div>
+		<div id="two">
+			<div class="mini" title="aaa">
+				222
+			</div>
+			<div class="mini">
+				333
+			</div>
+		</div>
+		<div id="three">
+			<div class="mini" title="aaa">
+				444
+			</div>
+			<div class="mini">
+				555
+			</div>
+			<div class="mini">
+				666
+			</div>
+		</div>
+		<div>
+			<div class="mini">
+				777
+			</div>
+			<div class="mini">
+				888
+			</div>
+			<div class="mini">
+				999
+			</div>
+			<div class="mini">
+				000
+			</div>
+		</div>
+		<span id="five">
+			<div class="mini">
+				1000
+			</div>
+		</span>
+	</body>
+</html>

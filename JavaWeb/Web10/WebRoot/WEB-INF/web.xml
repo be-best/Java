@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE web-app PUBLIC "-//Sun Microsystems, Inc.//DTD Web Application 2.3//EN" "http://java.sun.com/dtd/web-app_2_3.dtd">
+<web-app id="WebApp_ID">
+	<display-name>Web10</display-name>
+	<!-- 设置全局参数 -->
+	 <context-param>
+  	<param-name>username</param-name>
+  	<param-value>root</param-value>
+  </context-param>
+    <context-param>
+  	<param-name>password</param-name>
+  	<param-value>123</param-value>
+  </context-param>
+  
+  <servlet>
+    <servlet-name>ReadFileDemo1</servlet-name>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <description>This is the description of my J2EE component</description>
+    <servlet-class>bull01.ServletContext.readfile.ReadFileDemo1</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>ReadFileDemo2</servlet-name>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <description>This is the description of my J2EE component</description>
+    <servlet-class>bull01.ServletContext.readfile.ReadFileDemo2</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>ReadFileDemo3</servlet-name>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <description>This is the description of my J2EE component</description>
+    <servlet-class>bull01.ServletContext.readfile.ReadFileDemo3</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>ServletDemo1</servlet-name>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <description>This is the description of my J2EE component</description>
+    <servlet-class>bull02.ServletContext.initparam.ServletDemo1</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>ReadFileDemo4</servlet-name>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <description>This is the description of my J2EE component</description>
+    <servlet-class>bull01.ServletContext.readfile.ReadFileDemo4</servlet-class>
+  </servlet>
+   <servlet>
+    <servlet-name>UserServlet</servlet-name>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <description>This is the description of my J2EE component</description>
+    <servlet-class>bull03.ServletDownload.UserServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>ReadFileDemo5</servlet-name>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <description>This is the description of my J2EE component</description>
+    <servlet-class>bull02.ServletContext.initparam.ReadFileDemo5</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>DownloadServlet</servlet-name>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <description>This is the description of my J2EE component</description>
+    <servlet-class>bull03.ServletDownload.DownloadServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>OutPrintServlet</servlet-name>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <description>This is the description of my J2EE component</description>
+    <servlet-class>bull04.out.OutPrintServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>RequestServlet</servlet-name>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <description>This is the description of my J2EE component</description>
+    <servlet-class>bull05.Request.RequestServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>UserRegistServlet</servlet-name>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <description>This is the description of my J2EE component</description>
+    <servlet-class>bull06.Regist.UserRegistServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>RequestServlet2</servlet-name>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <description>This is the description of my J2EE component</description>
+    <servlet-class>bull05.Request.RequestServlet2</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>ForwardServlet1</servlet-name>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <description>This is the description of my J2EE component</description>
+    <servlet-class>bull06.FordwardServlet.ForwardServlet1</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>ForwardServlet2</servlet-name>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <description>This is the description of my J2EE component</description>
+    <servlet-class>bull06.FordwardServlet.ForwardServlet2</servlet-class>
+  </servlet>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <servlet-mapping>
+    <servlet-name>UserServlet</servlet-name>
+    <url-pattern>/UserServlet</url-pattern>
+  </servlet-mapping>
+
+
+
+
+
+  <servlet-mapping>
+    <servlet-name>ReadFileDemo1</servlet-name>
+    <url-pattern>/ReadFileDemo1</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>ReadFileDemo2</servlet-name>
+    <url-pattern>/ReadFileDemo2</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>ReadFileDemo3</servlet-name>
+    <url-pattern>/ReadFileDemo3</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>ServletDemo1</servlet-name>
+    <url-pattern>/ServletDemo1</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>ReadFileDemo4</servlet-name>
+    <url-pattern>/ReadFileDemo4</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>ReadFileDemo5</servlet-name>
+    <url-pattern>/ReadFileDemo5</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>DownloadServlet</servlet-name>
+    <url-pattern>/DownloadServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>OutPrintServlet</servlet-name>
+    <url-pattern>/OutPrintServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>RequestServlet</servlet-name>
+    <url-pattern>/RequestServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>UserRegistServlet</servlet-name>
+    <url-pattern>/UserRegistServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>RequestServlet2</servlet-name>
+    <url-pattern>/RequestServlet2</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>ForwardServlet1</servlet-name>
+    <url-pattern>/ForwardServlet1</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>ForwardServlet2</servlet-name>
+    <url-pattern>/ForwardServlet2</url-pattern>
+  </servlet-mapping>
+	<welcome-file-list>
+		<welcome-file>index.html</welcome-file>
+		<welcome-file>index.htm</welcome-file>
+		<welcome-file>index.jsp</welcome-file>
+		<welcome-file>default.html</welcome-file>
+		<welcome-file>default.htm</welcome-file>
+		<welcome-file>default.jsp</welcome-file>
+	</welcome-file-list>
+</web-app>

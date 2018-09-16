@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link rel="stylesheet" href="../css/style.css" />
+		<script type="text/javascript" src="../js/jquery-1.8.3.min.js" ></script>
+		<script>
+			$(function() {
+	//			$("tr:odd").addClass("odd");
+//				$("tr:even").addClass("even");
+				$("tbody tr:odd").addClass("odd");
+				$("tbody tr:even").addClass("even");
+			})
+			
+			//单击事件的切换
+			$(function() {
+				$("tbody tr").toggle(function(){
+					//添加样式
+					$(this).addClass("selected");
+				},function(){
+					//去掉样式
+					$(this).removeClass("selected");
+				});
+			});
+			//鼠标悬停事件的切换
+			$(function() {
+				$("tbody tr").hover(function(){
+					//添加样式
+					$(this).addClass("selected");
+				},function(){
+					//去掉样式
+					$(this).removeClass("selected");
+				});
+			});
+		</script>
+	</head>
+	<body onload="changeColor()">
+		<table border = "1" width = "80%" align="center" id="dataTable">
+		<thead>
+			<tr>
+				<td>分类ID</td>
+				<td>分类名称</td>
+				<td>分类描述</td>
+				<td>操作</td>
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<td>1</td>
+				<td>手机数码</td>
+				<td>手机数码</td>
+				<td><a href="">修改</a>|<a href="">删除</a></td>
+			</tr>
+			<tr>
+				<td>2</td>
+				<td>烟酒糖茶</td>
+				<td>烟酒糖茶</td>
+				<td><a href="">修改</a>|<a href="">删除</a></td>
+			</tr>
+			<tr>
+				<td>3</td>
+				<td>鞋靴箱包</td>
+				<td>鞋靴箱包</td>
+				<td><a href="">修改</a>|<a href="">删除</a></td>
+			</tr>
+		</tbody>
+		</table>
+	</body>
+</html>
+

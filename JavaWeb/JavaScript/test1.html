@@ -1,0 +1,61 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>加减</title>
+<script type="text/javascript">
+ function Add( node)
+ {
+  var inputs=node.parentNode.getElementsByTagName("input");
+  var a= new Number(inputs[1].value);
+  a=a+1;
+  inputs[1].value=""+a;
+  
+ }
+ function Sub( node)
+ {
+  //node.parentNode的类型为单元格
+  var inputs=node.parentNode.getElementsByTagName("input");
+  var a= new Number(inputs[1].value);
+  a=a-1;
+  inputs[1].value=inputs[1].value-1;
+ }
+
+</script>
+</head>
+<table >
+<tr>
+<td><input value="-"  type="button" onclick="Sub(this)"/> <input type="text" value="8" name="t1" width="40px" />
+<input value="+"  type="button" onclick="Add(this)"/></td>
+</tr>
+</table>
+<body>
+</body>
+</html>
+<!--<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<script>
+		function fun(btn){
+    var span=document.getElementsByTagName("span")[0];
+    var n=parseInt(span.innerHTML);
+    if(btn.innerHTML=="+"){
+          n++;
+          if(n>10){n=10;alert("限购10件")}
+        }
+    else if(n!=1){
+            n--;
+        }
+    span.innerHTML=n;
+    }
+	</script>
+	</head>
+	<body>
+		<button class="btn" onclick="fun(this)" >-</button>
+		<span>1</span>
+		<button class="btn" onclick="fun(this)">+</button>
+			</body>
+</html>
+-->

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link rel="stylesheet" href="../css/style.css" />
+		<script type="text/javascript" src="../js/jquery-1.11.3.min.js" ></script>
+		<script>
+			$(function(){
+				$("#but1").click(function(){
+					$(":input").css("background","lavender");
+				});
+				
+				$("#but2").click(function(){
+					$("input[type='text']").css("background","magenta");
+				});
+			});
+		</script>
+	</head>
+	<body>
+		表单属性选择器：
+		<input type="button" id="but1" value="选择所有的input元素" />
+		<input type="button" id="but2" value="选择文本框" />
+		<hr />
+		<form>
+		    <input type="button" value="Input Button"/>
+		    <input type="checkbox" />
+		
+		    <input type="file" />
+		    <input type="hidden" />
+		    <input type="image" />
+		
+		    <input type="password" />
+		    <input type="radio" />
+		    <input type="reset" />
+		
+		    <input type="submit" />
+		    <input type="text" />
+		    <select><option>Option</option></select>
+		
+		    <textarea></textarea>
+		    <button>Button</button>
+		
+		</form>
+	</body>
+</html>

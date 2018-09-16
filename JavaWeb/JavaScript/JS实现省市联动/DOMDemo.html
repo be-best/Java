@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<script>
+			//var obj = {age:22,showage:function(){alert(age);}};
+			//var obj = [age:22,showage:function(){alert(age);}];
+			var obj = {age:22,showage:"alert(age)";};
+			//添加元素
+			function addElement() {
+				var city = document.getElementById("city");
+				//创建一个元素
+				var LiEl = document.createElement("li");
+				//创建一个文本节点
+				var text = document.createTextNode("深圳");
+				//把文本节点添加到元素中
+				LiEl.appendChild(text);
+				//把元素添加到city这个列表中
+				city.appendChild(LiEl);
+			}
+			
+			//删除元素
+			function delElement() {
+				var city = document.getElementById("city");
+				var count = city.childNodes.length;
+				//alert(count);
+				city.removeChild(city.childNodes[count-1]);
+			}
+		</script>
+	</head>
+	<body>
+		<input type="button" value="添加元素" onclick="addElement()" />
+		<input type="button" value="删除元素" onclick="delElement()" />
+		<input type="button" value="show" onclick="showage()" />
+		<ul id="city">
+			<li>北京
+			<li>上海
+		</ul>
+	</body>
+</html>

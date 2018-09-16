@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<script type="text/javascript" src="../js/jquery-1.11.3.min.js" ></script>
+		<script>
+			$(function() {
+				//往p里面添加元素
+				$("#but1").click(function() {
+					$("p").append("<b>bbb</b>")
+				});
+				//把元素添加到d1中
+				$("#but2").click(function() {
+					$("p").appendTo("#d1");
+				});
+				//覆盖p里面的所有元素内容
+				$("#but3").click(function() {
+					$("p").html("ccc");
+				});
+			});
+		</script>
+	</head>
+	<body>
+		<input type="button" id="but1" value="添加元素" />
+		<input type="button" id="but2" value="添加元素 " />
+		<input type="button" id="but3" value="覆盖元素内容" />
+		<hr />
+		<p>aaa</p>
+		<div id="d1" style="border: 1px solid red;width: 100px;height: 100px;"></div>
+	</body>
+</html>

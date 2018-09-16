@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>success.html</title>
+	
+    <meta name="keywords" content="keyword1,keyword2,keyword3">
+    <meta name="description" content="this is my page">
+    <meta name="content-type" content="text/html; charset=UTF-8">
+    <!--<link rel="stylesheet" type="text/css" href="./styles.css">-->
+
+	 <!-- 设置跳转到首页 -->
+    <meta http-equiv="Refresh" content="5;url=/Web01/userRefresh/index.html"/>
+    <!-- 设置计时器 -->
+    <script type="text/javascript">
+    	var time = 5;
+    	window.onload = function() {
+    		setInterval('changeTime()',1000);
+    	}
+    	
+    	function changeTime() {
+    		time--;
+    		document.getElementById("number").innerHTML = time;
+    	}
+    </script>
+  </head>	
+  
+  <body>
+    <h1>登录成功！欢迎您！</h1>
+    <h3>页面将在<span id="number" style="color:red">5</span>秒内跳转...</h3>
+  </body>
+</html>

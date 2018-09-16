@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>requestTest.html</title>
+	
+    <meta name="keywords" content="keyword1,keyword2,keyword3">
+    <meta name="description" content="this is my page">
+    <meta name="content-type" content="text/html; charset=UTF-8">
+    
+     <!-- 解决火狐文字乱码 -->
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <!--<link rel="stylesheet" type="text/css" href="./styles.css">-->
+
+  </head>
+  
+  <body>
+    <form action="/Web10/RequestServlet2" method="get">
+    	Get方式:<br/>
+    	<input type="text" name="nameget" ><br/>
+    	<input type="submit" value="提交"><br/>
+    </form>
+    
+    <form action="/Web10/RequestServlet2" method="post">
+    	Post方式:<br/>
+    	<input type="text" name="namepost" ><br/>
+    	<input type="submit" value="提交">
+    </form>
+  </body>
+</html>

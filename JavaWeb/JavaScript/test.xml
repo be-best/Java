@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>注册界面</title>
+		
+		<style>
+	
+		</style>
+		
+		
+		<script src="js/checkForm.js"></script>
+	<script>
+		function fun(btn){
+    var span=document.getElementsByTagName("span")[0];
+    var n=parseInt(span.innerHTML);
+    if(btn.innerHTML=="+"){
+          n++;
+          if(n>10){n=10;alert("限购10件")}
+        }
+    else if(n!=1){
+            n--;
+        }
+    span.innerHTML=n;
+    }
+	</script>
+	</head>
+	<body>
+		<button class="btn" onclick="fun(this)" >-</button>
+<span>1</span>
+<button class="btn" onclick="fun(this)">+</button>
+	</body>
+</html>

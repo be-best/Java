@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>注册界面</title>
+		<style>
+			.bodyDiv{
+				width: 90%;
+				margin:0 auto;/*设置body居中*/
+			}
+			
+			.logoDiv{
+				/*border: 1px solid red;*/
+				width: 33%;
+				float: left;
+				height: 80px;
+			}
+			
+			.logoDiv a{
+				text-decoration:none;/*去下划线*/
+            /*overflow: hidden; /*防止内容超出容器或者产生自动换行*/
+			}
+			
+			.clear{
+				clear: both;
+			}
+			
+			.menuDiv{
+				height: 40px;
+				background-color: black;
+				width: 100%;
+				/*border: 1px solid red;*/
+			}
+			
+			.menuDiv a{
+				text-decoration:none;/*去下划线*/
+				color: white;
+				font-size: 20px;
+			}
+			
+		</style>
+		<script type="text/javascript" src="../js/jquery-1.11.3.min.js" ></script>
+		<script>
+			$(function() {
+				var cities = [
+				["福州市","厦门市","漳州市","泉州市","莆田市","宁德市","龙岩市","三明市","南平市"],
+				["杭州市","宁波市","义乌市","温州市","嘉兴市","金华市","余姚市"],
+				["南京市","苏州市","无锡市","扬州市","连云港市"],
+				["广州市","深圳市","东莞市","珠海市","汕头市","佛山市","湛江市","中山市"],
+				["石家庄市","秦皇岛市","廊坊市","唐山市","张家口市"]
+			];
+			var city = $("#city");
+			$("#province").change(function() {
+				//清除原先的城市
+				city.get(0).options.length = 1;
+				
+				var val = this.value;
+				$.each(cities, function(i,n) {
+					if(i == val) {
+						$(n).each(function(j,m) {
+							city.append("<option>"+m+"</option>");
+						});
+					}
+				});
+			});
+		});
+		</script>
+				
+		
+	</head>
+	<body>
+		<div class="bodyDiv">
+			<div>
+				<div class="logoDiv">
+					<img src="img/logo2.png" />
+				</div>
+				<div class="logoDiv">
+					<img src="img/header.jpg" />
+				</div>
+				<div class="logoDiv" style="margin-left:150px ;margin-top: 35px;height: 45px;width: 180px;">
+					<a href="#" >登录</a>&nbsp;&nbsp;&nbsp;
+					<a href="#" >注册</a>&nbsp;&nbsp;&nbsp;
+					<a href="#" >购物车</a>&nbsp;&nbsp;&nbsp;
+				</div>
+				<div class="clear"></div>
+			</div>
+			
+			<div class="menuDiv">
+				<a href="#">首页</a>&nbsp;&nbsp;&nbsp;
+				<a href="#">手机数码</a>&nbsp;&nbsp;&nbsp;
+				<a href="#">电脑办公</a>&nbsp;&nbsp;&nbsp;
+				<a href="#">烟酒茶糖</a>&nbsp;&nbsp;&nbsp;
+				<a href="#">鞋靴箱包</a>&nbsp;&nbsp;&nbsp;
+			</div>
+			
+			<!--
+            	注册表
+            -->
+			<div style="height: 600px;width: 100%;background-image: url(image/regist_bg.jpg);">
+				<div style="height: 450px;
+					background: white;
+					width: 600px;
+					position: absolute;
+					margin-top: 70px;
+					margin-left: 300px;
+					border: 5px solid gray;">
+					<form>
+						<table width="100%" cellspacing="15" >
+							<tr>
+								<td>用户名</td> 
+								<td><input type="text" name="userName" id="userName"></td>
+							</tr>
+							<tr>
+								<td>密码</td>
+								<td><input type="password" name="passWord" id="password"></td>
+							</tr>
+							<tr>
+								<td>确认密码</td>
+								<td><input type="password" name="repassWord" id="repassword"></td>
+							</tr>
+							<tr>
+								<td>性别</td>
+								<td>
+									<input type="radio" name="sex" value="男" />男<input type="radio" name="sex" value="女" />女
+								</td>
+							</tr>
+							<tr>
+								<td>籍贯</td>
+								<td>
+									<select name="province" id="province" >
+										<option value="">--请选择--</option>
+										<option value="0">福建</option>
+										<option value="1">浙江</option>
+										<option value="2">江苏</option>
+										<option value="3">广东</option>
+										<option value="4">河北</option>
+									</select>
+									<select name="city" id="city">
+										<option>--请选择--</option>
+									</select>
+								</td>
+							</tr>	
+							<tr>
+								<td>爱好</td>
+								<td>
+									<input type="checkbox" name="hobby" value="篮球"/>篮球
+									<input type="checkbox" name="hobby"  value="足球" />足球
+									<input type="checkbox" name="hobby" value="排球" />排球	
+								</td>
+							</tr>
+							<tr>
+								<td>邮箱</td>
+								<td>
+									<input type="email" name="email" id="email"/>
+								</td>
+							</tr>
+							<tr>
+								<td colspan="2">
+									<input type="submit" value="注册" />
+									<input type="submit" value="取消" />
+								</td>
+							</tr>
+						</table>
+					</form>
+				</div>
+			</div>
+			
+			<!--图片栏-->
+				<div style="width: 100%;">
+					<img src="image/footer.jpg" width="100%"/>
+				</div>
+			<!--底栏-->
+				<center>
+					<div class="linkDiv" >
+						<a href="#" >关于我们</a>&nbsp;&nbsp;
+						<a href="#" >联系我们</a>&nbsp;&nbsp;
+						<a href="#" >招贤纳士</a>&nbsp;&nbsp;
+						<a href="#" >法律声明</a>&nbsp;&nbsp;
+						<a href="#" >友情链接</a>&nbsp;&nbsp;
+						<a href="#" >支付方式</a>&nbsp;&nbsp;
+						<a href="#" >配送方式</a>&nbsp;&nbsp;
+						<a href="#" >服务方式</a>&nbsp;&nbsp;
+						<a href="#" >广告声明</a>&nbsp;&nbsp;
+					</div>
+
+				<div>
+					<font>--------------------------------------------------------------------------------------------------</font>
+					<br />
+					<font> Copyright © 2005-2016 传智商城 版权所有 </font>
+				</div>
+			</center>
+		</div>
+	</body>
+</html>

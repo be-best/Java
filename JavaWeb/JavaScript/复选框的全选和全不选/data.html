@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<script>
+			//设置表格隔行换色
+			function changeColor() {
+				//获取对象控制权
+				var table1 = document.getElementById("dataTable");
+				//获取行数
+				var count = table1.rows.length;
+				//遍历行数,注意用var定义i
+				for(var i = 0;i < count;i++) {
+					if(i%2 == 0) {
+						table1.rows[i].style.backgroundColor = "#00FF00";
+					}
+					else {
+						table1.rows[i].style.backgroundColor = "#FFEE00";
+					}
+				}
+			}
+			
+			//设置全选和全不选
+			function checkAll() {
+				//获取全选的复选框
+				var selectAll = document.getElementById("selectAll");
+				//获取剩下的复选框集合
+				var otherCheckbox = document.getElementsByName("ids");
+				if(selectAll.checked == true) {
+					for(var i = 0;i < otherCheckbox.length;i++) {
+						otherCheckbox[i].checked = true;
+					}
+				}
+				else {
+					for(var i = 0;i < otherCheckbox.length;i++) {
+						otherCheckbox[i].checked = false;
+					}
+				}
+			}
+
+		</script>
+	</head>
+	<body onload="changeColor()">
+		<table border = "1" width = "80%" align="center" id="dataTable">
+			
+			<tr>
+				<th><input type="checkbox" id="selectAll" onclick="checkAll()" /></th>
+				<th>分类ID</th>
+				<th>分类名称</th>
+				<th>分类描述</th>
+				<th>操作</th>
+			</tr>
+			<tr>
+				<td>
+					<input type="checkbox" name="ids" />
+				</td>
+				<td>1</td>
+				<td>手机数码</td>
+				<td>手机数码</td>
+				<td><a href="">修改</a>|<a href="">删除</a></td>
+			</tr>
+			<tr>
+				<td>
+					<input type="checkbox" name="ids" />
+				</td>
+				<td>2</td>
+				<td>烟酒糖茶</td>
+				<td>烟酒糖茶</td>
+				<td><a href="">修改</a>|<a href="">删除</a></td>
+			</tr>
+			<tr>
+				<td>
+					<input type="checkbox" name="ids" />
+				</td>
+				<td>3</td>
+				<td>鞋靴箱包</td>
+				<td>鞋靴箱包</td>
+				<td><a href="">修改</a>|<a href="">删除</a></td>
+			</tr>
+		</table>
+	</body>
+</html>
